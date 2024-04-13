@@ -1,0 +1,25 @@
+﻿<Window x:Class="SEMANA05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SEMANA05"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBox x:Name="txtIdEmpleado" Margin="5" Text="IdEmpleado"/>
+            <TextBox x:Name="txtApellidos" Margin="5" Text="Apellidos"/>
+            <TextBox x:Name="txtNombre" Margin="5" Text="Nombre"/>
+            <TextBox x:Name="txtCargo" Margin="5" Text="Cargo"/>
+            <TextBox x:Name="txtTratamiento" Margin="5" Text="Tratamiento"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Crear" Click="Crear_Click" Margin="5"/>
+                <Button Content="Leer" Click="Leer_Click" Margin="5"/>
+                <Button Content="Actualizar" Click="Actualizar_Click" Margin="5"/>
+                <Button Content="Eliminar" Click="Eliminar_Click" Margin="5"/>
+            </StackPanel>
+            <DataGrid x:Name="dgEmpleados" AutoGenerateColumns="True" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
